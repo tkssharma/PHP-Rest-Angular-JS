@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html ng-app="rideshare">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="icon" href="images/ic_launcher.png">
+
+    <title>Jquery Learning</title>
+
+<link rel="stylesheet" href="http://maxcdn.bootstrapcdn.com/bootstrap/3.2.0/css/bootstrap.min.css">
+<link href='css/style.css' rel='stylesheet' type='text/css'/>
+<script src="http://ajax.googleapis.com/ajax/libs/jquery/2.1.1/jquery.min.js"></script>
+<script src="js/ajaxGetPost.js"></script>
+    <script src="lib/angular.min.js"></script>
+    <script src="lib/angular-route.min.js"></script>
+          <script src="app.js"></script>
+
+  </head>
+  <body>
+
+    <!-- Static navbar -->
+	
+
+	<page-header></page-header>
+
+
+  <div class='container'>
+    <div class="well well-lg">
+    <div class='row '>
+      <div class='col-md-7'>
+        <h2>REST is everywhere</h2>
+        <p class='lead'>Make your way to space our API in simple steps</p>
+        <a href="#/api"><button  type='button' class='btn btn-lg btn-default'>API Tour</button></a>
+        <a href="#/access"><button type='button' class='btn btn-lg btn-primary'>Get acess for API</button></a>
+      </div>
+      <div class='col-md-5 visible-md visible-lg'>
+        <img  class="img-responsive img-thumbnail" alt="Responsive image" src='rest.jpg' alt='Blast off with Bootstrap' />
+      </div>
+    </div>
+
+    <div class='row '>
+      <div class='col-md-10'>
+
+        <!-- main content will come from routes -->
+          <div>
+          <div ng-view=""></div>
+          </div>
+      </div>
+      
+    </div>
+
+
+
+    </div>
+
+    <div class='row text-center features'>
+      <div class='col-sm-4 col-xs-10 col-xs-offset-1 col-sm-offset-0'>
+        <i class='glyphicon glyphicon-briefcase '></i>
+        <h3>Access Today</h3>
+        <p>Representational State Transfer (REST) is a style of software architecture for distributed hypermedia systems such as the World Wide Web</p>
+      </div>
+
+      <div class='col-sm-4 col-xs-6'>
+        <i class='glyphicon glyphicon-random'></i>
+        <h3>Consume anywhere</h3>
+        <p>Our application is a simple CRUD system for managing a list of Online trainings. We'll start our project with the provider service which produces XML and JSON representations of our data</p>
+      </div>
+
+      <div class='col-sm-4 col-xs-6'>
+        <i class='glyphicon glyphicon-send'></i>
+        <h3>REST service&reg;</h3>
+        <p>This application ias built on top of PHP to access data using REST services on different platform </p>
+      </div>
+    </div>
+  </div>
+
+  
+    <page-footer></page-footer>
+  
+  
+  
+   
+  
+  
+     <script src="src/controller/homeController.js"></script>
+     <script src="src/controller/apiController.js"></script>
+     <script src="src/controller/accessController.js"></script>
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
+    <script src="http://maxcdn.bootstrapcdn.com/bootstrap/3.2.0/js/bootstrap.min.js"></script>
+      
+  </body>
+   
+	
+  </body>
+</html>
